@@ -1,0 +1,120 @@
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1         [-1, 64, 112, 112]           9,472
+       BatchNorm2d-2         [-1, 64, 112, 112]             128
+              ReLU-3         [-1, 64, 112, 112]               0
+         MaxPool2d-4           [-1, 64, 56, 56]               0
+            Conv2d-5           [-1, 64, 56, 56]          36,928
+       BatchNorm2d-6           [-1, 64, 56, 56]             128
+              ReLU-7           [-1, 64, 56, 56]               0
+           Dropout-8           [-1, 64, 56, 56]               0
+              ReLU-9           [-1, 64, 56, 56]               0
+           Conv2d-10           [-1, 64, 56, 56]          36,928
+      BatchNorm2d-11           [-1, 64, 56, 56]             128
+             ReLU-12           [-1, 64, 56, 56]               0
+          Dropout-13           [-1, 64, 56, 56]               0
+             ReLU-14           [-1, 64, 56, 56]               0
+           Conv2d-15          [-1, 128, 28, 28]          73,856
+      BatchNorm2d-16          [-1, 128, 28, 28]             256
+             ReLU-17          [-1, 128, 28, 28]               0
+          Dropout-18          [-1, 128, 28, 28]               0
+           Conv2d-19          [-1, 128, 28, 28]           8,320
+             ReLU-20          [-1, 128, 28, 28]               0
+           Conv2d-21          [-1, 128, 28, 28]         147,584
+      BatchNorm2d-22          [-1, 128, 28, 28]             256
+             ReLU-23          [-1, 128, 28, 28]               0
+          Dropout-24          [-1, 128, 28, 28]               0
+             ReLU-25          [-1, 128, 28, 28]               0
+           Conv2d-26          [-1, 256, 14, 14]         295,168
+      BatchNorm2d-27          [-1, 256, 14, 14]             512
+             ReLU-28          [-1, 256, 14, 14]               0
+          Dropout-29          [-1, 256, 14, 14]               0
+           Conv2d-30          [-1, 256, 14, 14]          33,024
+             ReLU-31          [-1, 256, 14, 14]               0
+           Conv2d-32          [-1, 256, 14, 14]         590,080
+      BatchNorm2d-33          [-1, 256, 14, 14]             512
+             ReLU-34          [-1, 256, 14, 14]               0
+          Dropout-35          [-1, 256, 14, 14]               0
+             ReLU-36          [-1, 256, 14, 14]               0
+           Conv2d-37            [-1, 512, 7, 7]       1,180,160
+      BatchNorm2d-38            [-1, 512, 7, 7]           1,024
+             ReLU-39            [-1, 512, 7, 7]               0
+           Conv2d-40            [-1, 512, 7, 7]       2,359,808
+      BatchNorm2d-41            [-1, 512, 7, 7]           1,024
+          Dropout-42            [-1, 512, 7, 7]               0
+           Conv2d-43            [-1, 512, 7, 7]         131,584
+             ReLU-44            [-1, 512, 7, 7]               0
+           Conv2d-45            [-1, 512, 7, 7]       2,359,808
+      BatchNorm2d-46            [-1, 512, 7, 7]           1,024
+             ReLU-47            [-1, 512, 7, 7]               0
+           Conv2d-48            [-1, 512, 7, 7]       2,359,808
+      BatchNorm2d-49            [-1, 512, 7, 7]           1,024
+          Dropout-50            [-1, 512, 7, 7]               0
+             ReLU-51            [-1, 512, 7, 7]               0
+        AvgPool2d-52            [-1, 512, 1, 1]               0
+           Linear-53                 [-1, 1000]         513,000
+             ReLU-54                 [-1, 1000]               0
+           Linear-55                  [-1, 200]         200,200
+================================================================
+Total params: 10,341,744
+Trainable params: 10,341,744
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.57
+Forward/backward pass size (MB): 50.74
+Params size (MB): 39.45
+Estimated Total Size (MB): 90.77
+----------------------------------------------------------------
+Cost at epoch 0 is 5.27489
+Cost at epoch 1 is 5.12214
+Cost at epoch 2 is 4.96708
+Cost at epoch 3 is 4.83825
+Cost at epoch 4 is 4.74969
+Cost at epoch 5 is 4.67924
+Cost at epoch 6 is 4.59605
+Cost at epoch 7 is 4.52754
+Cost at epoch 8 is 4.40433
+Cost at epoch 9 is 4.37680
+Cost at epoch 10 is 4.29694
+Cost at epoch 11 is 4.24412
+Cost at epoch 12 is 4.17504
+Cost at epoch 13 is 4.12888
+Cost at epoch 14 is 4.05632
+Cost at epoch 15 is 4.03198
+Cost at epoch 16 is 3.97117
+Cost at epoch 17 is 3.93104
+Cost at epoch 18 is 3.85655
+Cost at epoch 19 is 3.83100
+Cost at epoch 20 is 3.78702
+Cost at epoch 21 is 3.72364
+Cost at epoch 22 is 3.65930
+Cost at epoch 23 is 3.63669
+Cost at epoch 24 is 3.61405
+Cost at epoch 25 is 3.55778
+Cost at epoch 26 is 3.52898
+Cost at epoch 27 is 3.49150
+Cost at epoch 28 is 3.40870
+Cost at epoch 29 is 3.40755
+Cost at epoch 30 is 3.37328
+Cost at epoch 31 is 3.32011
+Cost at epoch 32 is 3.29883
+Cost at epoch 33 is 3.30405
+Cost at epoch 34 is 3.20105
+Cost at epoch 35 is 3.19112
+Cost at epoch 36 is 3.17502
+Cost at epoch 37 is 3.14600
+Cost at epoch 38 is 3.07518
+Cost at epoch 39 is 3.10031
+Cost at epoch 40 is 3.04482
+Cost at epoch 41 is 2.99293
+Cost at epoch 42 is 2.99585
+Cost at epoch 43 is 2.95257
+Cost at epoch 44 is 2.91746
+Cost at epoch 45 is 2.91036
+Cost at epoch 46 is 2.82591
+Cost at epoch 47 is 2.89707
+Cost at epoch 48 is 2.79722
+Cost at epoch 49 is 2.77846
+Got 1579 / 5994 with accuracy 26.34
+Got 1277 / 5794 with accuracy 22.04
